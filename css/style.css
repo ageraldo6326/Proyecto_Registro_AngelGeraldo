@@ -1,0 +1,143 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: rgba(228, 227, 227, 0.641);
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px 15px 0px 0px;
+  width: 60%;
+  background-color: green;
+  color: white;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+}
+
+.control-botones {
+  text-align: center;
+  margin: 15px 0px;
+  background-color: green;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 0px;
+
+}
+
+h1 {font-size: 30px;background-color: green;}
+
+.btn-enviar {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(128, 0, 128); 
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* Animacion en el boton cuando se coloca el mouse  */
+.btn-enviar:hover {
+  background-color: rgb(92, 1, 92); 
+  cursor: pointer;
+  font-weight: bold; 
+}
+
+.btn-borrar {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(186, 6, 6);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* Animacion en el boton cuando se coloca el mouse  */
+.btn-borrar:hover {
+  background-color: rgb(136, 5, 5); 
+  cursor: pointer;
+  font-weight: bold;  
+}
+
+.btn-reg-enviados {
+  height: 30px;
+  width: 150px;
+  background-color: blue;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* Animacion en el boton cuando se coloca el mouse  */
+.btn-reg-enviados:hover {
+  background-color: rgba(0, 0, 255, 0.587);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;  
+}
+
+label{background-color: green; font-size: 15px;}
+input {background-color:white; font-size: 20px;}
+textarea {background-color: white;font-size: 20px;border-radius: 5px;}
+select {background-color: white;font-size: 20px;}
+
+thead {
+  background-color: rgb(9, 72, 45);
+  color: white;
+  font-weight: 100;
+  border: none;
+}
+tbody {
+  background-color: rgb(20, 166, 103);
+  color: white;
+}
+
+/* Ajustes para que el formulario sea accesible 
+y compatible con dispositivos móviles. */
+
+
+
+
+
+@media (max-width: 768px) {
+  tbody {
+    font-size: xx-small;
+  }
+
+  thead {
+    font-size: xx-small;
+  }
+  .formulario {
+    width: 96%; 
+  }
+  .contenedor {
+    margin-top: 10px; 
+  }
+  h1 {
+    font-size: 24px; 
+  }
+  .btn-grabar, .btn-borrar {
+    width: 80px; 
+    font-size: 14px; 
+  }
+}

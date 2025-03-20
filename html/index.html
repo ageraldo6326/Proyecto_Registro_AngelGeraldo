@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Registro de inscripción</title>
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <form class="formulario">
+      <div class="titulo">
+        <h1>Registro de Inscripción</h1>
+      </div>
+      <div class="control">
+        <label for="nombreCompleto">Nombre Completo:</label>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Nombre completo" />
+        <span id="error_nombre"></span>
+      </div><br>
+      <div class="control">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="correo" />
+        <span id="error_correo"></span>
+      </div><br>
+      <div class="control">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="telefono" />
+        <span id="error_telefono"></span>
+      </div><br>
+      <div class="control">
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha nacimiento" />
+        <span id="error_fecha_nacimiento"></span>
+      </div><br>
+      <div class="control">
+        <label for="seleccionCurso">Selección de curso:</label>
+        <select id="seleccionCurso" name="seleccionCurso">
+          <option value="">Seleccione Curso</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">Javascript</option>
+          <option value="vuejs">VUE JS</option>
+          <option value="reactjs">REACT JS</option>
+        </select>
+        <span id="error_seleccionCurso"></span>
+      </div><br>
+      <div class="control">
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario"></textarea>
+      </div><br>
+      <div class="control-botones">
+        <button id="enviar" name="enviar" class="btn-enviar">Enviar</button>
+        <button id="borrar" name="borrar" class="btn-borrar">Borrar</button>
+        <button id="reg_enviados" name="reg_enviados" class="btn-reg-enviados">Registros Enviados</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Fecha Nac</th>
+            <th>Curso</th>
+            <th>Comentario</th>
+          </tr>
+        </thead>
+        <tbody id="localStorage">
+
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
