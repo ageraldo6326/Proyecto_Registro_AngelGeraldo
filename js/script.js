@@ -31,7 +31,6 @@ function borrar() {
   error_fecha_nacimiento.innerText = "";
   error_seleccionCurso.innerText = "";
   tbodyLocalStorage.innerHTML = "";
-  localStorage.clear();
 }
 
 // captura del evento click del boton btnBorrar que 
