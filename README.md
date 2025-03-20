@@ -2,8 +2,6 @@ Proyecto Final - Portal de Registro de Inscripción
 📌 Descripción
 Este proyecto es un portal de inscripción en línea hecho con HTML, CSS y JavaScript. Permite a los usuarios registrarse en cursos, validando los datos ingresados y almacenándolos en localStorage.
 
-⚠️ Cuando abres la página con Live Server u Otro Servidor, la estás sirviendo a través de un servidor web local (http://localhost:xxxx). localStorage funciona correctamente en este contexto porque los navegadores permiten su uso en páginas servidas desde HTTP o HTTPS, no asi cuando se abre la pagina directamente, es un asunto de seguridad, probar desde un servidor.
-
 ✅ Enlace para prueba desde Github Pages
 https://ageraldo6326.github.io/Proyecto_Registro_AngelGeraldo/html/
 
